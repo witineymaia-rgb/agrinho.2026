@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FuturoVerde - Contra o Desmatamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- CABEÇALHO DO SITE -->
+    <header>
+        <div class="logo">
+            <h1>🌿 FuturoVerde</h1>
+            <p>Agro forte, futuro sustentável</p>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#impactos">Impactos</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO INÍCIO -->
+        <section id="inicio" class="secao">
+            <article>
+                <h2>O que é desmatamento?</h2>
+                <p>Desmatamento é a remoção da vegetação nativa de uma área. Infelizmente, isso acontece muito no Brasil, principalmente na Amazônia, Cerrado e Mata Atlântica. O desmatamento prejudica os animais, o clima e a vida das pessoas.</p>
+                <img src="https://via.placeholder.com/800x400?text=Desmatamento+Ilustracao" alt="Imagem ilustrativa de desmatamento" class="imagem-principal">
+            </article>
+        </section>
+
+        <!-- SEÇÃO IMPACTOS DO DESMATAMENTO -->
+        <section id="impactos" class="secao">
+            <h2>🌍 Impactos do desmatamento</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Perda de animais</h3>
+                    <p>Muitos animais perdem seu lar e podem até ser extintos.</p>
+                </div>
+                <div class="card">
+                    <h3>Mudanças climáticas</h3>
+                    <p>Menos árvores significa menos chuva e mais calor.</p>
+                </div>
+                <div class="card">
+                    <h3>Poluição do solo e água</h3>
+                    <p>Sem árvores, a terra fica fraca e os rios secam.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOLUÇÕES SUSTENTÁVEIS -->
+        <section id="solucoes" class="secao">
+            <h2>🌱 Soluções para parar o desmatamento</h2>
+            <ul>
+                <li>✔️ Plantar árvores nativas</li>
+                <li>✔️ Comprar produtos de fazendas sustentáveis</li>
+                <li>✔️ Denunciar queimadas e desmatamento ilegal</li>
+                <li>✔️ Apoiar a agricultura familiar e orgânica</li>
+                <li>✔️ Economizar papel e reciclar</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO SIMULADOR (FUNCIONALIDADE INTERATIVA) -->
+        <section id="simulador" class="secao">
+            <h2>🌳 Simulador: Você salva árvores?</h2>
+            <article class="simulador-container">
+                <p>Escolha uma ação sustentável e veja quantas árvores você ajuda a salvar por ano!</p>
+                
+                <div class="botoes-simulador">
+                    <button class="botao-acao" data-arvores="50">🌿 Plantar árvores no quintal</button>
+                    <button class="botao-acao" data-arvores="120">♻️ Reduzir o uso de papel</button>
+                    <button class="botao-acao" data-arvores="200">🚫 Denunciar desmatamento ilegal</button>
+                    <button class="botao-acao" data-arvores="80">🥕 Comprar produtos orgânicos</button>
+                </div>
+
+                <div class="resultado-simulador">
+                    <p id="mensagem-resultado">Clique em uma ação acima para começar.</p>
+                    <p id="arvores-salvas"></p>
+                </div>
+            </article>
+        </section>
+
+        <!-- SEÇÃO CONCLUSÃO -->
+        <section id="conclusao" class="secao">
+            <h2>🏁 Conclusão</h2>
+            <p>O desmatamento é um problema sério, mas todos nós podemos ajudar. Pequenas ações no dia a dia fazem uma grande diferença. O futuro verde depende de cada um de nós. 🌎💚</p>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 - FuturoVerde</p>
+        <p>📸 Fotografias próprias | 🌱 Conscientização ambiental</p>
+    </footer>
+
+    <!-- BOTÃO DE ACESSIBILIDADE FIXO -->
+    <div class="botao-acessibilidade" id="botaoAcessibilidade">
+        ♿ Acessibilidade
+    </div>
+
+    <!-- MENU DE ACESSIBILIDADE (ESCONDIDO INICIALMENTE) -->
+    <div class="menu-acessibilidade" id="menuAcessibilidade">
+        <button id="aumentarFonte">A+ Aumentar fonte</button>
+        <button id="diminuirFonte">A- Diminuir fonte</button>
+        <button id="altoContraste">🌓 Alto contraste</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
