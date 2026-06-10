@@ -1,1 +1,256 @@
+/* ESTILOS GERAIS - FuturoVerde */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f4f9f4;
+    color: #2c3e2f;
+    transition: all 0.3s ease;
+}
+
+/* CORES PRINCIPAIS: Verde, azul e marrom (natureza) */
+:root {
+    --verde-escuro: #1e3a1e;
+    --verde-claro: #4caf50;
+    --azul-natureza: #2c7da0;
+    --marrom-solo: #8b5a2b;
+    --fundo-claro: #ffffff;
+    --texto-escuro: #1e2f1e;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, var(--verde-escuro), var(--azul-natureza));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--verde-claro);
+}
+
+/* SEÇÕES */
+.secao {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--fundo-claro);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+    border-left: 5px solid var(--marrom-solo);
+    padding-left: 15px;
+}
+
+.imagem-principal {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    border-bottom: 4px solid var(--marrom-solo);
+}
+
+/* SIMULADOR */
+.simulador-container {
+    text-align: center;
+    background-color: #e1f5fe;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.botoes-simulador {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.botao-acao {
+    background-color: var(--verde-escuro);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.botao-acao:hover {
+    background-color: var(--verde-claro);
+    transform: scale(1.05);
+}
+
+.resultado-simulador {
+    background-color: var(--fundo-claro);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#arvores-salvas {
+    font-size: 1.5rem;
+    color: var(--verde-escuro);
+    margin-top: 10px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* BOTÃO DE ACESSIBILIDADE FIXO */
+.botao-acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--azul-natureza);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.botao-acessibilidade:hover {
+    background-color: var(--verde-claro);
+}
+
+/* MENU DE ACESSIBILIDADE */
+.menu-acessibilidade {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.menu-acessibilidade button {
+    background-color: var(--verde-escuro);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-acessibilidade button:hover {
+    background-color: var(--verde-claro);
+}
+
+.mostrar {
+    display: flex;
+}
+
+/* MODO ALTO CONTRASTE */
+.alto-contraste {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .card,
+.alto-contraste .simulador-container {
+    background-color: #222 !important;
+    color: yellow !important;
+    border-color: yellow !important;
+}
+
+.alto-contraste a,
+.alto-contraste button {
+    color: yellow !important;
+    background-color: black !important;
+    border: 1px solid yellow !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .botao-acao {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
